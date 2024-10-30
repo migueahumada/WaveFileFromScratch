@@ -46,11 +46,22 @@ typedef struct WaveHeader
     
 }WaveHeader;
 
-//This funcions reads binary data and count the samples in an audio file
+/**
+ This function reads binary data and counts the samples in an audio file
+ */
 int readBinaryData(const char* path);
 
+/**
+ Updates wave header chunks with data
+ \param waveHeader a struct for inserting data
+ \param sampleRate input sample rate
+ */
 void updateHeader(WaveHeader* waveHeader, int sampleRate, int numChannels, int precision, int databytes);
 
+/**
+ Creates a new wave file with fixed frequency and distance
+ \param path file directory for the new file
+ */
 int outputWaveFile(const char* path);
 
 #endif /* wave_h */

@@ -2,7 +2,7 @@
 //  main.c
 //  FileHandling
 //
-//  d by Miguel Angel Ahumada Gaona on 25/10/24.
+//  Created by Miguel Angel Ahumada Gaona on 25/10/24.
 //
 
 #include <stdio.h>
